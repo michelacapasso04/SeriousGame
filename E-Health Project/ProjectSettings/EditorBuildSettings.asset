@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Scena iniziale.unity
+    guid: ccb5ee1513fbf7b43863cc39644efa77
+  - enabled: 1
+    path: Assets/Scenes/Sound Selection.unity
+    guid: 18f72547f7b89224e8ee6e134a97c30e
+  - enabled: 1
+    path: Assets/Scenes/Target Selection.unity
+    guid: b627984f2dcaf5b42b9eb15ff9c5d678
+  - enabled: 1
+    path: Assets/Scenes/Ultima Specialista.unity
+    guid: 6de0de492ad581047b5d31a6be55ce0a
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/The End.unity
+    guid: 6a291697bd2a59645a64f63c52f5b8b7
+  - enabled: 1
+    path: Assets/Scenes/Storia.unity
+    guid: 70d9941478e11b4459c99e1a1eff6c08
+  - enabled: 1
+    path: Assets/Scenes/World Selection.unity
+    guid: eef60c2cb88c8d34b911a555f1d8f816
+  - enabled: 1
+    path: Assets/Scenes/Spiegazione Livello Aria.unity
+    guid: 0fcd34e09ef8f0f4a8fc62774a875ebd
+  - enabled: 1
+    path: Assets/Scenes/Livello Aria.unity
+    guid: 3f75a8ae77f644949b6e5f6d236128d9
+  - enabled: 1
+    path: Assets/Scenes/Game Over Aria.unity
+    guid: 22fc865ccb7881845b2ccc6fe07b3475
+  - enabled: 1
+    path: Assets/Scenes/Minigioco Aria.unity
+    guid: 066a3a493c95958459d903745b40d3d2
+  - enabled: 1
+    path: Assets/Scenes/WaterGame.unity
+    guid: 842e36fe25b22ef48817aa0f002a7206
+  - enabled: 1
+    path: Assets/Scenes/Livello Acqua.unity
+    guid: e91853cecc1d0624ab38e7a8df1b24cf
+  - enabled: 1
+    path: Assets/Scenes/Game Over Acqua.unity
+    guid: 14ac8e5cefd300b408bc0ba996f36721
+  - enabled: 1
+    path: Assets/Scenes/Minigioco Acqua.unity
+    guid: 606779eb14d7bab47968d31d9225ef00
+  - enabled: 1
+    path: Assets/Scenes/Spiegazione Livello Terra.unity
+    guid: 7f7605e63a8af214788c58c2aec499cf
+  - enabled: 1
+    path: Assets/Scenes/Livello Terra.unity
+    guid: 80dc95ff681b49143a142be88aa50bf4
+  - enabled: 1
+    path: Assets/Scenes/Mostro.unity
+    guid: f27522f810c672941a9f370920a1eee1
+  - enabled: 1
+    path: Assets/Scenes/Livello Fuoco.unity
+    guid: 00f79a9d269f96547ab9ea24d0f9d74f
+  - enabled: 1
+    path: Assets/Scenes/Game Over Fuoco.unity
+    guid: 141ebd6eb76a33e45826482caef31339
+  m_configObjects: {}
