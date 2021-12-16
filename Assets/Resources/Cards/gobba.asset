@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c09b2d53c1721334fb379e421e9241fd, type: 3}
+  m_Name: gobba
+  m_EditorClassIdentifier: 
+  indice: 66
+  parolaEssenziale: 10
+  rappresentabile: 1
+  parola: gobba
+  lett1: g
+  sillaba1: gob
+  hard: 1
+  soft: 0
+  img: {fileID: 21300000, guid: 8e2ce8c395bfec4428c63ef232b37080, type: 3}
+  suono: {fileID: 8300000, guid: 3ebd5340d5d4f824ea3de54c1f0c9a0d, type: 3}

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c09b2d53c1721334fb379e421e9241fd, type: 3}
+  m_Name: gatto
+  m_EditorClassIdentifier: 
+  indice: 33
+  parolaEssenziale: 10
+  rappresentabile: 1
+  parola: gatto
+  lett1: g
+  sillaba1: gat
+  hard: 1
+  soft: 0
+  img: {fileID: 21300000, guid: dc4ac130bcc30f046a8e4e7c8a9d8d31, type: 3}
+  suono: {fileID: 8300000, guid: b84ad8879aa012f42929e97bb9f2f161, type: 3}

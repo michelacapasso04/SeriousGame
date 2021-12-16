@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Scena iniziale.unity
+    guid: ccb5ee1513fbf7b43863cc39644efa77
+  - enabled: 1
+    path: Assets/Scenes/Statistiche.unity
+    guid: 54c372c63262a6444be1df56af9959f3
+  - enabled: 1
+    path: Assets/Scenes/Sound Selection.unity
+    guid: 18f72547f7b89224e8ee6e134a97c30e
+  - enabled: 1
+    path: Assets/Scenes/Target Selection.unity
+    guid: b627984f2dcaf5b42b9eb15ff9c5d678
+  - enabled: 1
+    path: Assets/Scenes/Ultima Specialista.unity
+    guid: 6de0de492ad581047b5d31a6be55ce0a
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Storia.unity
+    guid: 70d9941478e11b4459c99e1a1eff6c08
+  - enabled: 1
+    path: Assets/Scenes/World Selection.unity
+    guid: eef60c2cb88c8d34b911a555f1d8f816
+  - enabled: 1
+    path: Assets/Scenes/Spiegazione Livello Aria.unity
+    guid: 0fcd34e09ef8f0f4a8fc62774a875ebd
+  - enabled: 1
+    path: Assets/Scenes/Livello Aria.unity
+    guid: 3f75a8ae77f644949b6e5f6d236128d9
+  - enabled: 1
+    path: Assets/Scenes/Game Over Aria.unity
+    guid: 22fc865ccb7881845b2ccc6fe07b3475
+  - enabled: 1
+    path: Assets/Scenes/Fine Aria.unity
+    guid: 93aa9f92e551a69478526987eb3efa87
+  - enabled: 1
+    path: Assets/Scenes/Minigioco Aria.unity
+    guid: 066a3a493c95958459d903745b40d3d2
+  - enabled: 1
+    path: Assets/Scenes/Sconfitta Aria.unity
+    guid: 968f82c8bee884e038ff55b0f4e2bf77
+  - enabled: 1
+    path: Assets/Scenes/Vittoria Aria.unity
+    guid: 1bc0262addaf144fe91039d5c95fb87e
+  - enabled: 1
+    path: Assets/Scenes/Spiegazione Livello Acqua.unity
+    guid: 842e36fe25b22ef48817aa0f002a7206
+  - enabled: 1
+    path: Assets/Scenes/Livello Acqua.unity
+    guid: 7f6fe1079d12ee34b9dfdb86fa0faaa2
+  - enabled: 1
+    path: Assets/Scenes/Fine Acqua.unity
+    guid: 0338c85700d1dc64e86e22893c0807e7
+  - enabled: 1
+    path: Assets/Scenes/Game Over Acqua.unity
+    guid: aa230d815b1a47b4388d597338dc0122
+  - enabled: 1
+    path: Assets/Scenes/Minigioco Acqua.unity
+    guid: e6147cd98d5cef84583eedf87aa72ee3
+  - enabled: 1
+    path: Assets/Scenes/Sconfitta Acqua.unity
+    guid: 3e85d5a1becd5e6459eebc2b4c751f5d
+  - enabled: 1
+    path: Assets/Scenes/Vittoria Acqua.unity
+    guid: 1a9f4a10dec95e24c8253834906de73b
+  - enabled: 1
+    path: Assets/Scenes/Spiegazione Livello Terra.unity
+    guid: 7f7605e63a8af214788c58c2aec499cf
+  - enabled: 1
+    path: Assets/Scenes/Livello Terra.unity
+    guid: 80dc95ff681b49143a142be88aa50bf4
+  - enabled: 1
+    path: Assets/Scenes/Fine Terra.unity
+    guid: f27522f810c672941a9f370920a1eee1
+  - enabled: 1
+    path: Assets/Scenes/Game Over Terra.unity
+    guid: 47145aa87c8059b448e40c0bdacfa34e
+  - enabled: 1
+    path: Assets/Scenes/Minigioco Terra.unity
+    guid: 26353ee615ca24f45920e3fe3805b40f
+  - enabled: 1
+    path: Assets/Scenes/Sconfitta Terra.unity
+    guid: 5b3afc7f43c8e724ba8375582f680cc6
+  - enabled: 1
+    path: Assets/Scenes/Vittoria Terra.unity
+    guid: 5a13daa9fb2bbf249b5bf3f9524f2e89
+  - enabled: 1
+    path: Assets/Scenes/Spiegazione Livello Fuoco.unity
+    guid: b6f3f843d3f24c64ea001dcb8a56487d
+  - enabled: 1
+    path: Assets/Scenes/Livello Fuoco.unity
+    guid: 00f79a9d269f96547ab9ea24d0f9d74f
+  - enabled: 1
+    path: Assets/Scenes/Fine Fuoco.unity
+    guid: b8a26279a0dba8840aaef1261628ce9c
+  - enabled: 1
+    path: Assets/Scenes/Game Over Fuoco.unity
+    guid: 141ebd6eb76a33e45826482caef31339
+  - enabled: 1
+    path: Assets/Scenes/Minigioco Fuoco.unity
+    guid: 05480dc7da6074ed3acfd6817b5541d7
+  - enabled: 1
+    path: Assets/Scenes/Sconfitta Fuoco.unity
+    guid: 99cc6cf2187065a4c892ef8f8c772019
+  - enabled: 1
+    path: Assets/Scenes/Vittoria Fuoco.unity
+    guid: 1bcc4bdc79634084686df9314bc05403
+  - enabled: 1
+    path: Assets/Scenes/The End.unity
+    guid: 6a291697bd2a59645a64f63c52f5b8b7
+  m_configObjects: {}

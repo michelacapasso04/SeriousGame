@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c09b2d53c1721334fb379e421e9241fd, type: 3}
+  m_Name: gorilla
+  m_EditorClassIdentifier: 
+  indice: 42
+  parolaEssenziale: 10
+  rappresentabile: 1
+  parola: gorilla
+  lett1: g
+  sillaba1: go
+  hard: 1
+  soft: 0
+  img: {fileID: 21300000, guid: 34e0ab9c618ce5d458ba9a9fcaadbcb8, type: 3}
+  suono: {fileID: 8300000, guid: 7bd1b65a15a9e9846a6704127d0b5a58, type: 3}

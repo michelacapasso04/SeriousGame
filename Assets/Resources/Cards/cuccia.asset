@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c09b2d53c1721334fb379e421e9241fd, type: 3}
+  m_Name: cuccia
+  m_EditorClassIdentifier: 
+  indice: 25
+  parolaEssenziale: 10
+  rappresentabile: 1
+  parola: cuccia
+  lett1: c
+  sillaba1: cuc
+  hard: 1
+  soft: 0
+  img: {fileID: 21300000, guid: 353e1e6309d22a84ead0df20e7d9516e, type: 3}
+  suono: {fileID: 8300000, guid: 33ea537c0c100f048bbdd6d1d7b14914, type: 3}

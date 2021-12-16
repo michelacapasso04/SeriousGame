@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c09b2d53c1721334fb379e421e9241fd, type: 3}
+  m_Name: cervello
+  m_EditorClassIdentifier: 
+  indice: 7
+  parolaEssenziale: 10
+  rappresentabile: 1
+  parola: cervello
+  lett1: c
+  sillaba1: cer
+  hard: 0
+  soft: 1
+  img: {fileID: 21300000, guid: 0e6d5473b0e6e1a41b39c1cc5aa76d54, type: 3}
+  suono: {fileID: 8300000, guid: 0a2417754e5835a4db4b41ce3fc044c4, type: 3}
