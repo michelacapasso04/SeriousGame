@@ -67,6 +67,7 @@ public class Answer_Fuoco : MonoBehaviour
         {
             CardManager.s_count++;
         }
+        CardManager.indList.Add(CardManager.indice);
     }
 
 

@@ -17,8 +17,8 @@ public class SalvataggioNome : MonoBehaviour
     public static List<string> dictionaryCF = new List<string>();
     public static string kidName = "Name";
     public static string CF = "CF";
-    public string Name;
-    public string Code;
+    public static string Name;
+    public static string Code;
     public GameObject inputFieldName;
     public GameObject inputFieldCF;
 
@@ -43,6 +43,13 @@ public class SalvataggioNome : MonoBehaviour
         File.WriteAllLines(path + "/" + filename, lines);
         
 
+    }
+
+    public void Statistiche()
+    {
+        Name = (inputFieldName.GetComponent<Text>().text).ToUpper();
+        Code = (inputFieldCF.GetComponent<Text>().text).ToUpper();
+        SceneManager.LoadScene("Statistiche");
     }
 
 

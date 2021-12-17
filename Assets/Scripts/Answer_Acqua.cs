@@ -59,6 +59,7 @@ public class Answer_Acqua : MonoBehaviour
         {
             CardManager.s_count++;
         }
+        CardManager.indList.Add(CardManager.indice);
     }
 
 

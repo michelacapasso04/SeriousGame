@@ -13,6 +13,7 @@ public class CardManager : MonoBehaviour
 	private int randomInt;
 	private int nCard;
 	private List<int> indx = new List<int>();
+	public static List<int> indList = new List<int>();
 	public static int visual; //visualizzazione 0 = vedere, 1 = sentire
 	public static int v_count=0, s_count=0;
 	public static int indice;
@@ -22,11 +23,10 @@ public class CardManager : MonoBehaviour
 
 	void Awake()
 	{
-		diffic = 3;
-		lettera = 3;
-		/*diffic = ChangeScene.target_selezionato;
-		lettera = ChangeScene.sound_selezionato;*/
-		UnityEngine.Debug.Log("difficoltà"+diffic);
+		
+		diffic = ChangeScene.target_selezionato;
+		lettera = ChangeScene.sound_selezionato;
+		UnityEngine.Debug.Log("difficoltà" + diffic);
 		UnityEngine.Debug.Log("lettera"+lettera);
 	}
 
@@ -40,7 +40,7 @@ public class CardManager : MonoBehaviour
 	{
 		for (nCard = 0; nCard < 10; nCard++)
 		{
-			randomInt = RandomInt(indx);
+			randomInt = RandomInt(indx, indList);
 			Difficulty(diffic);
 			yield return new WaitForSeconds(timeleft);
 		}
@@ -75,10 +75,10 @@ public class CardManager : MonoBehaviour
 		}
 	}
 
-	public int RandomInt(List<int> indx)
+	public int RandomInt(List<int> indx, List<int> indList)
 	{
 		randomInt = Random.Range(0, DB2.instance.items.allCards.Count());
-		while (!(indx.Contains(randomInt)))
+		while (!(indx.Contains(randomInt))||(indList.Contains(randomInt)))
 		{
 			randomInt = Random.Range(0, DB2.instance.items.allCards.Count());
 		}

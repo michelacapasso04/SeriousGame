@@ -288,8 +288,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2073230134}
         m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: CambiaScena
-        m_Mode: 5
+        m_MethodName: ARIA
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -501,8 +501,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2073230134}
         m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: CambiaScena
-        m_Mode: 5
+        m_MethodName: FUOCO
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -898,8 +898,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2073230134}
         m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: CambiaScena
-        m_Mode: 5
+        m_MethodName: TERRA
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1464,8 +1464,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2073230134}
         m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: CambiaScena
-        m_Mode: 5
+        m_MethodName: ACQUA
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

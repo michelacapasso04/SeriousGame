@@ -7,6 +7,7 @@ public class ChangeScene : MonoBehaviour
 {
     static public int target_selezionato = 0;
     static public int sound_selezionato = 0;
+    static public string mondo;
     public void CambiaScena (string sceneName)
     {
         SceneManager.LoadScene(sceneName);
@@ -48,6 +49,29 @@ public class ChangeScene : MonoBehaviour
         SceneManager.LoadScene("Target Selection");
     }
 
+    public void FUOCO()
+    {
+        mondo = "FUOCO";
+        SceneManager.LoadScene("Spiegazione Livello Fuoco");
+    }
+
+    public void ARIA()
+    {
+        mondo = "ARIA";
+        SceneManager.LoadScene("Spiegazione Livello Aria");
+    }
+
+    public void ACQUA()
+    {
+        mondo = "ACQUA";
+        SceneManager.LoadScene("Spiegazione Livello Acqua");
+    }
+
+    public void TERRA()
+    {
+        mondo = "TERRA";
+        SceneManager.LoadScene("Spiegazione Livello Terra");
+    }
 
 
 }

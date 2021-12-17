@@ -59,6 +59,7 @@ public class Answer_Aria : MonoBehaviour
         {
             CardManager.s_count++;
         }
+        CardManager.indList.Add(CardManager.indice);
     }
 
     public void Start()

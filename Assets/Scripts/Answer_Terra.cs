@@ -19,10 +19,12 @@ public class Answer_Terra : MonoBehaviour
         {
             corretto += 1;
             ris.text = (scritta).ToString("COMPLIMENTI!");
+            //Destroy(this);
         }
         else
         {
             ris.text = (scritta).ToString("OH NO!");
+            //Destroy(this);
         }
         TimerTerra.timeLeft = 999.0f;
         StartCoroutine(MyCoroutine());
@@ -36,10 +38,12 @@ public class Answer_Terra : MonoBehaviour
         {
             corretto += 1;
             ris.text = (scritta).ToString("COMPLIMENTI!");
+            //Destroy(this);
         }
         else
         {
             ris.text = (scritta).ToString("OH NO!");
+            //Destroy(this);
         }
         TimerTerra.timeLeft = 999.0f;
         StartCoroutine(MyCoroutine());
@@ -61,6 +65,7 @@ public class Answer_Terra : MonoBehaviour
         {
             CardManager.s_count++;
         }
+        CardManager.indList.Add(CardManager.indice);
     }
 
 
