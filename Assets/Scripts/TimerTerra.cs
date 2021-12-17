@@ -9,6 +9,7 @@ public class TimerTerra : MonoBehaviour
     public static float timeLeft = 5.0f;
     public Text startText;
     public static int num = 10;
+    public static int punt = 0;
 
 
     void Update()
@@ -37,11 +38,17 @@ public class TimerTerra : MonoBehaviour
             if (Answer_Terra.corretto > 5)
             {
                 SceneManager.LoadScene("Vittoria Terra");
+                num = 10;
+                punt = Answer_Terra.corretto;
+                Answer_Terra.corretto = 0;
                 DontDestroy.music.Play(0);
             }
             else
             {
                 SceneManager.LoadScene("Sconfitta Terra");
+                num = 10;
+                punt = Answer_Terra.corretto;
+                Answer_Terra.corretto = 0;
                 DontDestroy.music.Play(0);
             }
         }

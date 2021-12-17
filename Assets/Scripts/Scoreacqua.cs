@@ -12,7 +12,7 @@ public class Scoreacqua : MonoBehaviour
     void Start()
     {
         
-        score.text = (s).ToString(Answer_Acqua.corretto.ToString());
+        score.text = (s).ToString(TIMER.punt.ToString());
     }
 
 }

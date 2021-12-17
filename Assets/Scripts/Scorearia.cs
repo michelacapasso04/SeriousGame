@@ -12,7 +12,7 @@ public class Scorearia : MonoBehaviour
     void Start()
     {
 
-        score.text = (s).ToString(Answer_Aria.corretto.ToString());
+        score.text = (s).ToString(TimerAria.punt.ToString());
     }
 
 }

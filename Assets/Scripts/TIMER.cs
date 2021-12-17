@@ -9,8 +9,9 @@ public class TIMER : MonoBehaviour
     public static float timeLeft = 5.0f;
     public Text startText;  
     public static int num = 10;
+    public static int punt = 0;
 
-    
+
     void Update()
         {  
             if(num>0)
@@ -37,13 +38,19 @@ public class TIMER : MonoBehaviour
                 if (Answer_Acqua.corretto > 5)
                 {
                     SceneManager.LoadScene("Vittoria Acqua");
+                    num = 10;
+                    punt = Answer_Acqua.corretto;
+                    Answer_Acqua.corretto = 0;
                     DontDestroy.music.Play(0);
             }
                 else
                 {
                     SceneManager.LoadScene("Sconfitta Acqua");
+                    num = 10;
+                    punt = Answer_Acqua.corretto;
+                    Answer_Acqua.corretto = 0;
                     DontDestroy.music.Play(0);
-                }
+            }
             }
            
         }

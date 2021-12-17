@@ -12,7 +12,7 @@ public class Scorefuoco : MonoBehaviour
     void Start()
     {
 
-        score.text = (s).ToString(Answer_Fuoco.corretto.ToString());
+        score.text = (s).ToString(TimerFuoco.punt.ToString());
     }
 
 }

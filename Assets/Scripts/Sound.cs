@@ -8,12 +8,13 @@ using UnityEngine.UI;
 public class Sound : MonoBehaviour
 {
     Toggle myToggle;
+    public static bool nosound = false;
 
     // Start is called before the first frame update
     void Start()
     {
         myToggle = GetComponent<Toggle>();
-        if(AudioListener.volume == 0)
+        if(nosound==true)
         {
             myToggle.isOn = false;
         }
@@ -24,10 +25,14 @@ public class Sound : MonoBehaviour
         if(audioIn)
         {
             AudioListener.volume = 1;
+            DontDestroy.music.Play();
+            nosound = false;
         }
         else
         {
-            AudioListener.volume = 0;
+            //AudioListener.volume = 0;
+            DontDestroy.music.Pause();
+            nosound = true;
         }
     }
     

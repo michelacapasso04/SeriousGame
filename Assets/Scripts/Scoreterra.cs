@@ -12,7 +12,7 @@ public class Scoreterra : MonoBehaviour
     void Start()
     {
 
-        score.text = (s).ToString(Answer_Terra.corretto.ToString());
+        score.text = (s).ToString(TimerTerra.punt.ToString());
     }
 
 }

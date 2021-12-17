@@ -9,6 +9,7 @@ public class TimerAria : MonoBehaviour
     public static float timeLeft = 5.0f;
     public Text startText;
     public static int num = 10;
+    public static int punt = 0;
 
 
     void Update()
@@ -37,11 +38,17 @@ public class TimerAria : MonoBehaviour
             if (Answer_Aria.corretto > 5)
             {
                 SceneManager.LoadScene("Vittoria Aria");
+                num = 10;
+                punt = Answer_Aria.corretto;
+                Answer_Aria.corretto = 0;
                 DontDestroy.music.Play(0);
             }
             else
             {
                 SceneManager.LoadScene("Sconfitta Aria");
+                num = 10;
+                punt = Answer_Aria.corretto;
+                Answer_Aria.corretto = 0;
                 DontDestroy.music.Play(0);
             }
         }

@@ -8,8 +8,8 @@ public class TimerFuoco : MonoBehaviour
 
     public static float timeLeft = 5.0f;
     public Text startText;
-    public static int num = 10;
-
+    public static int num=10;
+    public static int punt = 0;
 
     void Update()
     {
@@ -37,11 +37,17 @@ public class TimerFuoco : MonoBehaviour
             if (Answer_Fuoco.corretto > 5)
             {
                 SceneManager.LoadScene("Vittoria Fuoco");
+                num = 10;
+                punt = Answer_Fuoco.corretto;
+                Answer_Fuoco.corretto = 0;
                 DontDestroy.music.Play(0);
             }
             else
             {
                 SceneManager.LoadScene("Sconfitta Fuoco");
+                num = 10;
+                punt = Answer_Fuoco.corretto;
+                Answer_Fuoco.corretto = 0;
                 DontDestroy.music.Play(0);
             }
         }

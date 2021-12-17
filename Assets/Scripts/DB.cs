@@ -36,24 +36,24 @@ public class DB : MonoBehaviour
         string nome = SalvataggioNome.Name;
         nome=nome.ToUpper();
         string data = DateTime.Today.ToString("d");
-        int target = ChangeScene.target_selezionato;
-        int diff = ChangeScene.sound_selezionato;
+        int target = ChangeScene.sound_selezionato;
+        int diff = ChangeScene.target_selezionato;
         string mondo = ChangeScene.mondo;
         if(mondo == "FUOCO")
         {
-            punteggio = Answer_Fuoco.corretto;
+            punteggio = TimerFuoco.punt;
         } 
         else if (mondo == "ARIA")
         {
-            punteggio = Answer_Aria.corretto;
+            punteggio = TimerAria.punt;
         }
         else if (mondo == "ACQUA")
         {
-            punteggio = Answer_Acqua.corretto;
+            punteggio = TIMER.punt;
         }
         else if (mondo == "TERRA")
         {
-            punteggio = Answer_Terra.corretto;
+            punteggio = TimerTerra.punt;
         }
 
 

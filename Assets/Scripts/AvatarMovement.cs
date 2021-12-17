@@ -9,6 +9,12 @@ public class AvatarMovement : MonoBehaviour
 	public static bool val = true;
 	public float maxy;
 	public float miny;
+
+	private void Start()
+    {
+		val = true;
+		Vector3 PosizioneToccoMouse = Camera.main.ScreenToWorldPoint(new Vector3(-5, Input.mousePosition.y, Camera.main.nearClipPlane));
+	}
 	private void Update()
 	{
 		// Se � premuto il testo sinistro del mouse
