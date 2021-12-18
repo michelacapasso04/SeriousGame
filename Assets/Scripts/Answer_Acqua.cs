@@ -66,8 +66,7 @@ public class Answer_Acqua : MonoBehaviour
     public void Start()
     {
         DontDestroy.music.Pause();
-        CardManager.v_count = 0;
-        CardManager.s_count = 0;
+       
     }
 
 }

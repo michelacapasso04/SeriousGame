@@ -786,7 +786,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1624852160}
         m_TargetAssemblyTypeName: SalvataggioNome, Assembly-CSharp
-        m_MethodName: CreaFileTxt
+        m_MethodName: Avanti
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

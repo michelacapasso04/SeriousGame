@@ -65,8 +65,7 @@ public class Answer_Aria : MonoBehaviour
     public void Start()
     {
         DontDestroy.music.Pause();
-        CardManager.v_count = 0;
-        CardManager.s_count = 0;
+       
     }
 
 

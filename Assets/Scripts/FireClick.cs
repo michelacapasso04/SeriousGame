@@ -15,7 +15,6 @@ public class FireClick : MonoBehaviour
 
     Vector2 trans = new Vector2();
 
-    bool Girato = false;
 
     bool lancio_sx = false;
     bool lancio_dx = false;
@@ -48,7 +47,7 @@ public class FireClick : MonoBehaviour
             goccia.SetActive(true);
 
             lancio_sx = true;
-            Girato = true;
+            
 
         }
         else if (lato)
@@ -59,7 +58,7 @@ public class FireClick : MonoBehaviour
             goccia.SetActive(true);
 
             lancio_dx = true;
-            Girato = true;
+            
         }
        
 
