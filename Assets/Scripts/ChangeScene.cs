@@ -11,7 +11,7 @@ public class ChangeScene : MonoBehaviour
     public void CambiaScena (string sceneName)
     {
         SceneManager.LoadScene(sceneName);
-        if ((sceneName == "Spiegazione Livello Acqua") || (sceneName == "Spiegazione Livello Aria") || (sceneName == "Spiegazione Livello Terra") || (sceneName == "Spiegazione Livello Fuoco"))
+        if ((sceneName == "Livello Acqua") || (sceneName == "Livello Aria") || (sceneName == "Livello Terra") || (sceneName == "Livello Fuoco"))
         {
             CardManager.v_count = 0;
             CardManager.s_count = 0;

@@ -23,7 +23,11 @@ public class SalvataggioNome : MonoBehaviour
     public GameObject inputFieldCF;
 
     public void Avanti()
-    { 
+    {
+        Name = inputFieldName.GetComponent<Text>().text;
+        dictionaryName.Add(Name);
+        Code = inputFieldCF.GetComponent<Text>().text;
+        dictionaryCF.Add(Code);
         SceneManager.LoadScene("Sound Selection");
     }
 
