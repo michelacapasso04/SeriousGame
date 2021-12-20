@@ -17,6 +17,7 @@ public class Answer_Terra : MonoBehaviour
         //se file con nome card è soft allora corretto+=1
         if (DB2.GetCardByID(CardManager.indice).soft == 1)
         {
+           
             corretto += 1;
             ris.text = (scritta).ToString("COMPLIMENTI!");
             //Destroy(this);
