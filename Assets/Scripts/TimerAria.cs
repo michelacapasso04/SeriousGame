@@ -8,8 +8,9 @@ public class TimerAria : MonoBehaviour
 {
     public static float timeLeft = 5.0f;
     public Text startText;
+    public static int tempo;
     public static int num = 10;
-    public static int punt = 0;
+    public static float punt = 0.0f;
 
 
     void Update()
@@ -24,6 +25,7 @@ public class TimerAria : MonoBehaviour
             {
                 timeLeft -= Time.deltaTime;
                 startText.text = (timeLeft).ToString("0");
+                tempo = int.Parse(startText.text);
             }
             else if (timeLeft < 0)
             {
@@ -35,12 +37,12 @@ public class TimerAria : MonoBehaviour
         }
         else
         {
-            if (Answer_Aria.corretto > 5)
+            if (Answer_Aria.corretto > 5.0f)
             {
                 SceneManager.LoadScene("Vittoria Aria");
                 num = 10;
                 punt = Answer_Aria.corretto;
-                Answer_Aria.corretto = 0;
+                Answer_Aria.corretto = 0.0f;
                 DontDestroy.music.Play(0);
             }
             else
@@ -48,7 +50,7 @@ public class TimerAria : MonoBehaviour
                 SceneManager.LoadScene("Sconfitta Aria");
                 num = 10;
                 punt = Answer_Aria.corretto;
-                Answer_Aria.corretto = 0;
+                Answer_Aria.corretto = 0.0f;
                 DontDestroy.music.Play(0);
             }
         }

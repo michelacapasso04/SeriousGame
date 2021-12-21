@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class Answer_Terra : MonoBehaviour
 {
-    public static int corretto;
+    public static float corretto;
     public Text ris;
     public static float scritta = 5.0f;
 
@@ -17,8 +17,23 @@ public class Answer_Terra : MonoBehaviour
         //se file con nome card è soft allora corretto+=1
         if (DB2.GetCardByID(CardManager.indice).soft == 1)
         {
-           
-            corretto += 1;
+
+            if (TimerTerra.tempo == 5 || TimerTerra.tempo == 4)
+            {
+                corretto += 1.0f;
+            }
+            else if (TimerTerra.tempo == 3)
+            {
+                corretto += 0.9f;
+            }
+            else if (TimerTerra.tempo == 2)
+            {
+                corretto += 0.8f;
+            }
+            else if (TimerTerra.tempo == 1)
+            {
+                corretto += 0.7f;
+            }
             ris.text = (scritta).ToString("COMPLIMENTI!");
             //Destroy(this);
         }
@@ -37,7 +52,22 @@ public class Answer_Terra : MonoBehaviour
         //se file con nome card è hard allora corretto+=1
         if (DB2.GetCardByID(CardManager.indice).hard == 1)
         {
-            corretto += 1;
+            if (TimerTerra.tempo == 5 || TimerTerra.tempo == 4)
+            {
+                corretto += 1.0f;
+            }
+            else if (TimerTerra.tempo == 3)
+            {
+                corretto += 0.9f;
+            }
+            else if (TimerTerra.tempo == 2)
+            {
+                corretto += 0.8f;
+            }
+            else if (TimerTerra.tempo == 1)
+            {
+                corretto += 0.7f;
+            }
             ris.text = (scritta).ToString("COMPLIMENTI!");
             //Destroy(this);
         }

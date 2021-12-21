@@ -14,7 +14,7 @@ using System.Globalization;
 public class DB : MonoBehaviour
 
 {
-    private int punteggio;
+    private float punteggio;
     // Start is called before the first sframe update
     void Start()
     {

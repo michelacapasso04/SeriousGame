@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class Answer_Aria : MonoBehaviour
 {
-    public static int corretto = 0;
+    public static float corretto;
     public Text ris;
     public static float scritta = 5.0f;
 
@@ -16,7 +16,22 @@ public class Answer_Aria : MonoBehaviour
         //se file con nome card ? soft allora corretto+=1
         if (DB2.GetCardByID(CardManager.indice).soft == 1)
         {
-            corretto += 1;
+            if (TimerAria.tempo == 5 || TimerAria.tempo == 4)
+            {
+                corretto += 1.0f;
+            }
+            else if (TimerAria.tempo == 3)
+            {
+                corretto += 0.9f;
+            }
+            else if (TimerAria.tempo == 2)
+            {
+                corretto += 0.8f;
+            }
+            else if (TimerAria.tempo == 1)
+            {
+                corretto += 0.7f;
+            }
             ris.text = (scritta).ToString("COMPLIMENTI!");
         }
         else
@@ -33,7 +48,22 @@ public class Answer_Aria : MonoBehaviour
         //se file con nome card ? hard allora corretto+=1
         if (DB2.GetCardByID(CardManager.indice).hard == 1)
         {
-            corretto += 1;
+            if (TimerAria.tempo == 5 || TimerAria.tempo == 4)
+            {
+                corretto += 1.0f;
+            }
+            else if (TimerAria.tempo == 3)
+            {
+                corretto += 0.9f;
+            }
+            else if (TimerAria.tempo == 2)
+            {
+                corretto += 0.8f;
+            }
+            else if (TimerAria.tempo == 1)
+            {
+                corretto += 0.7f;
+            }
             ris.text = (scritta).ToString("COMPLIMENTI!");
         }
         else

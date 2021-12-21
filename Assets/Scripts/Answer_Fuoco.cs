@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class Answer_Fuoco : MonoBehaviour
 {
-    public static int corretto;
+    public static float corretto;
     public Text ris;
     public static float scritta = 5.0f;
 
@@ -18,7 +18,22 @@ public class Answer_Fuoco : MonoBehaviour
         //se file con nome card è soft allora corretto+=1
         if (DB2.GetCardByID(CardManager.indice).soft == 1)
         {
-            corretto += 1;
+            if (TimerFuoco.tempo == 5 || TimerFuoco.tempo == 4)
+            {
+                corretto += 1.0f;
+            }
+            else if (TimerFuoco.tempo == 3)
+            {
+                corretto += 0.9f;
+            }
+            else if (TimerFuoco.tempo == 2)
+            {
+                corretto += 0.8f;
+            }
+            else if (TimerFuoco.tempo == 1)
+            {
+                corretto += 0.7f;
+            }
             textCollision.corr = 1;
             ris.text = (scritta).ToString("COMPLIMENTI!");
         }
@@ -37,7 +52,22 @@ public class Answer_Fuoco : MonoBehaviour
         //se file con nome card è hard allora corretto+=1
         if (DB2.GetCardByID(CardManager.indice).hard == 1)
         {
-            corretto += 1;
+            if (TimerFuoco.tempo == 5 || TimerFuoco.tempo == 4)
+            {
+                corretto += 1.0f;
+            }
+            else if (TimerFuoco.tempo == 3)
+            {
+                corretto += 0.9f;
+            }
+            else if (TimerFuoco.tempo == 2)
+            {
+                corretto += 0.8f;
+            }
+            else if (TimerFuoco.tempo == 1)
+            {
+                corretto += 0.7f;
+            }
             textCollision.corr = 1;
             ris.text = (scritta).ToString("COMPLIMENTI!");
         }

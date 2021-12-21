@@ -6,13 +6,14 @@ using UnityEngine.UI;
 public class Scoreacqua : MonoBehaviour
 {
     public Text score;
-    public static float s = 0f;
-    
+
+
     // Start is called before the first frame update
     void Start()
     {
-        
-        score.text = (s).ToString(TIMER.punt.ToString());
+
+        score.text = TIMER.punt.ToString();
+
     }
 
 }

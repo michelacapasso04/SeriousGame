@@ -13,7 +13,7 @@ public class csv : MonoBehaviour
         public string difficoltà;
         public string lettera;
         public string mondo;
-        public int score;
+        public float score;
         public string nome;
     }
 
@@ -77,7 +77,7 @@ public class csv : MonoBehaviour
                         break;
                 }
                 entry.mondo = part[4];
-                int.TryParse(part[5], out entry.score);
+                float.TryParse(part[5], out entry.score);
                 entry.nome = part[6];
 
 

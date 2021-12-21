@@ -2,14 +2,17 @@ using System.Collections;
 using UnityEngine.UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.IO;
+using System.Collections.Generic;
 
 public class TimerFuoco : MonoBehaviour
 {
 
     public static float timeLeft = 5.0f;
     public Text startText;
+    public static int tempo;
     public static int num=10;
-    public static int punt = 0;
+    public static float punt = 0.0f;
 
     void Update()
     {
@@ -23,6 +26,7 @@ public class TimerFuoco : MonoBehaviour
             {
                 timeLeft -= Time.deltaTime;
                 startText.text = (timeLeft).ToString("0");
+                tempo= int.Parse(startText.text);
             }
             else if (timeLeft < 0)
             {
@@ -34,12 +38,12 @@ public class TimerFuoco : MonoBehaviour
         }
         else
         {
-            if (Answer_Fuoco.corretto > 5)
+            if (Answer_Fuoco.corretto > 5.0f)
             {
                 SceneManager.LoadScene("Vittoria Fuoco");
                 num = 10;
                 punt = Answer_Fuoco.corretto;
-                Answer_Fuoco.corretto = 0;
+                Answer_Fuoco.corretto = 0.0f;
                 DontDestroy.music.Play(0);
             }
             else
@@ -47,7 +51,7 @@ public class TimerFuoco : MonoBehaviour
                 SceneManager.LoadScene("Sconfitta Fuoco");
                 num = 10;
                 punt = Answer_Fuoco.corretto;
-                Answer_Fuoco.corretto = 0;
+                Answer_Fuoco.corretto = 0.0f;
                 DontDestroy.music.Play(0);
             }
         }

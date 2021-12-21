@@ -7,10 +7,10 @@ public class TIMER : MonoBehaviour
 {
 
     public static float timeLeft = 5.0f;
-    public Text startText;  
+    public Text startText;
+    public static int tempo;
     public static int num = 10;
-    public static int punt = 0;
-
+    public static float punt = 0.0f;
 
     void Update()
         {  
@@ -24,7 +24,8 @@ public class TIMER : MonoBehaviour
                 {
                     timeLeft -= Time.deltaTime;
                     startText.text = (timeLeft).ToString("0");
-                }
+                    tempo = int.Parse(startText.text);
+            }
                 else if (timeLeft < 0)
                 {
                     startText.fontSize = 80;
@@ -35,12 +36,12 @@ public class TIMER : MonoBehaviour
             }
             else
             {
-                if (Answer_Acqua.corretto > 5)
+                if (Answer_Acqua.corretto > 5.0f)
                 {
                     SceneManager.LoadScene("Vittoria Acqua");
                     num = 10;
                     punt = Answer_Acqua.corretto;
-                    Answer_Acqua.corretto = 0;
+                    Answer_Acqua.corretto = 0.0f;
                     DontDestroy.music.Play(0);
             }
                 else
@@ -48,7 +49,7 @@ public class TIMER : MonoBehaviour
                     SceneManager.LoadScene("Sconfitta Acqua");
                     num = 10;
                     punt = Answer_Acqua.corretto;
-                    Answer_Acqua.corretto = 0;
+                    Answer_Acqua.corretto = 0.0f;
                     DontDestroy.music.Play(0);
             }
             }

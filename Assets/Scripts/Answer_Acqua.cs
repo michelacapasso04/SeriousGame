@@ -7,16 +7,31 @@ using UnityEngine.SceneManagement;
 
 public class Answer_Acqua : MonoBehaviour
 {
-    public static int corretto;
-    public Text ris ;
-    public  static float scritta = 5.0f;
+    public static float corretto;
+    public Text ris;
+    public static float scritta = 5.0f;
 
 
     public void Soft(){
         //se file con nome card è soft allora corretto+=1
         if(DB2.GetCardByID(CardManager.indice).soft==1)
         {
-            corretto+=1;
+            if (TIMER.tempo == 5 || TIMER.tempo == 4)
+            {
+                corretto += 1.0f;
+            }
+            else if (TIMER.tempo == 3)
+            {
+                corretto += 0.9f;
+            }
+            else if (TIMER.tempo == 2)
+            {
+                corretto += 0.8f;
+            }
+            else if (TIMER.tempo == 1)
+            {
+                corretto += 0.7f;
+            }
             ris.text = (scritta).ToString("COMPLIMENTI!");
         }
         else
@@ -32,7 +47,22 @@ public class Answer_Acqua : MonoBehaviour
         //se file con nome card è hard allora corretto+=1
         if(DB2.GetCardByID(CardManager.indice).hard == 1)
         {
-            corretto+=1;
+            if (TIMER.tempo == 5 || TIMER.tempo == 4)
+            {
+                corretto += 1.0f;
+            }
+            else if (TIMER.tempo == 3)
+            {
+                corretto += 0.9f;
+            }
+            else if (TIMER.tempo == 2)
+            {
+                corretto += 0.8f;
+            }
+            else if (TIMER.tempo == 1)
+            {
+                corretto += 0.7f;
+            }
             ris.text = (scritta).ToString("COMPLIMENTI!");
         }
         else
